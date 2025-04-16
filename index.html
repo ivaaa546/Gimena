@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Feliz Pumpe</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="fotos/favicon.png" type="image/png">
+</head>
+<body>
+  <h1>¡Feliz Cumple, Feliz Vida!</h1>
+  <div class="card">
+    <p class="subtitle">Gimena</p>
+  <p>
+    Que te la pases bonito en este día super especial para ti y toda tu familia. Han pasado <strong>6,575 días</strong> y <strong>18 años</strong> 
+    desde que vinieron al mundo tú y tu hermana. 6,575 días donde has pasado alegrías, tristezas, logros, derrotas, 
+    donde has podido superar cada cosa que te propones. <strong>Estoy muy orgulloso de ti, Gimena</strong>, eres una personita muy especial para mí.
+  </p>
+
+  <button id="playButton" onclick="document.getElementById('musica').play()">▶ Reproducir Música</button>
+    <audio id="musica" loop>
+      <source src="musica/LoversRocks.mp3" type="audio/mp3">
+    </audio>
+  <p>
+    Recuerdo ese día que te conocí, un <strong>22 de noviembre del 2022</strong>. 
+    Tenías 15 años. Desde esa fecha ya eras alguien súper especial. 
+    Recuerdo esos tiempos, aún no sabíamos todo lo que íbamos a pasar. 
+    Tan rápido pasan los años y ahora ya estás bien grande. Ya estás a punto de ser maestra y, desde mi punto de vista, 
+    <strong>serás una de las mejores maestras que ha visto este mundo 🌎</strong>.
+  </p>
+  <p>
+    Y no solo te felicito, también agradezco a la vida que llegaras a la mía (eso rimó). Contigo aprendí todo lo bonito. 
+    A pesar de las cosas del pasado, que hay que aprender para no repetir, 
+    siempre has sido esa personita que he visto desarrollarse como persona, y eso me hace aún más feliz, 
+    porque te ando viendo cumplir <strong>otro año más de vida</strong> y quiero verte cumplir muchísimos más.
+  </p>
+  <p>
+    18 años, toda tu familia ha de estar orgullosa de ti y de tu hermana. ¡Ya todas unas señoritas!
+  </p>
+  <p>
+    Siempre estaré pendiente de ti, desde lejitos, echándote porras en todo lo que sea necesario. 
+    Eres y serás esa mujer que siempre llevaré en mi corazón y en mi mente, guardada en un disco SSD que nunca borraré, <strong>¡mi bonita!</strong>.
+  </p>
+  <p>
+    Te mando un fuerte abrazo. <strong>Felicidades en tu día</strong>, que la pases súper pero súper bien.
+  </p>
+  <p class="te-amo">Te amo 💖</p>
+    <div class="image-container">
+        <img src="fotos/foto.jpeg" alt="Foto de Gimena" />
+      </div>
+      <details class="gallery-section">
+        <summary>Ver galería de recuerdos</summary>
+      
+        <div class="gallery">
+            <img src="fotos/foto11.jpeg" alt="Foto 1" class="img-modal">
+            <img src="fotos/foto6.jpeg" alt="Foto 1" class="img-modal">
+            <img src="fotos/foto3.jpeg" alt="Foto 1" class="img-modal">
+            <img src="fotos/foto15.jpeg" alt="Foto 1" class="img-modal">
+            <img src="fotos/foto16.jpeg" alt="Foto 1" class="img-modal">
+            <img src="fotos/foto5.jpeg" alt="Foto 1" class="img-modal">
+            <img src="fotos/foto4.jpeg" alt="Foto 1" class="img-modal">
+            <img src="fotos/foto10.jpg" alt="Foto 1" class="img-modal">
+        </div>
+      </details>
+      <details class="gallery-section">
+        <summary>Ver galería de recuerdos</summary>
+      
+        <div class="gallery">
+          <img src="fotos/foto13.jpeg" alt="Foto 1" class="img-modal">
+          <img src="fotos/foto14.jpeg" alt="Foto 1" class="img-modal">
+          <img src="fotos/foto1.jpeg" alt="Foto 1" class="img-modal">
+          <img src="fotos/foto9.jpg" alt="Foto 1" class="img-modal">
+          <img src="fotos/foto7.jpeg" alt="Foto 1" class="img-modal">
+          <img src="fotos/foto8.jpg" alt="Foto 1" class="img-modal">
+          
+        </div>
+      </details>
+      <div id="modal" class="modal">
+        <img id="modalImg" class="modal-content">
+      </div>
+
+  <div id="modal" class="modal" onclick="closeModal()">
+    <img id="modalImg" class="modal-content">
+  </div>
+
+  <section class="frases">
+    <h2>Recuerda Que</h2>
+
+    <details>
+      <summary>Te dedico Cantares 4:7</summary>
+      <p>Toda tú eres hermosa, amada mía; y en ti no hay mancha</p>
+    </details>
+
+    <details>
+      <summary>Tu eres como</summary>
+      <p>Los amanceres, siempre brillando y bonitos</p>
+    </details>
+
+    <details>
+      <summary>Esta frase te queda super bien</summary>
+      <p>i decide my vibe</p>
+    </details>
+
+    <details>
+      <summary>Siempre</summary>
+      <p>Serás tu</p>
+    </details>
+
+    <details>
+      <summary>Nunca dejes de</summary>
+      <p>Brillar y ser esa personita tan especial</p>
+    </details>
+
+    <details>
+      <summary>Eres</summary>
+      <p>Tan bonita como el cielo</p>
+    </details>
+  </section>
+  <div class="card wish-card">
+    <h2>🎂 Pedí tu deseo 🎂</h2>
+    <form id="wishForm">
+      <textarea id="wishInput" placeholder="Escribí tu deseo aquí..." required></textarea>
+      <button type="submit">Enviar ✨</button>
+      <p id="wishMessage" class="hidden">¡Deseo enviado! 💫</p>
+    </form>
+  </div>
+  <div id="cuenta-regresiva">
+    <h2>Cuenta regresiva para tu proximo cumple:</h2>
+    <p id="countdown"></p>
+  </div>
+
+  <footer>
+    Hecho con mucho cariño siempre pensando en ti ❤️
+  </footer>
+  <script src="cuentaRegresiva.js"></script>
+</body>
+</html>
+
